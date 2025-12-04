@@ -1,202 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>RevealJS Complete Demo Presentation</title>
-
-    <!-- RevealJS core CSS -->
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" />
-
-    <!-- Highlight.js theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
-
-    <!-- Mermaid theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
     <style>
-      .mermaid {
-        text-align: left;
+      .email-highlight {
+        color: #42affa;
+        font-size: 0.8em;
+        margin-top: 20px;
       }
-    </style>
-
-    <!-- Custom Styling -->
-    <style>
-      .reveal {
-        font-family: "Arial", sans-serif;
-      }
-      .chart {
-        height: 400px;
-        margin: 20px auto;
-        border: 1px dashed #aaa;
+      .formula {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
       }
     </style>
   </head>
-
   <body>
     <div class="reveal">
       <div class="slides">
-
-        <!-- SLIDE 1: TITLE -->
+        
+        <!-- Slide 1: Title -->
         <section>
-          <h1>RevealJS Full Demo</h1>
-          <h3>All Features in One File</h3>
-          <h2>23f3000339@ds.study.iitm.ac.in</h2>
-          <p class="fragment fade-up">Animations Included</p>
-          <p class="fragment fade-in-then-out">Syntax Highlighting Included</p>
-          <p class="fragment grow">Math + Diagrams Included</p>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Q4 2025 - Financial Institution</h3>
+          <p class="email-highlight">Contact: 23f3000339@ds.study.iitm. ac.in</p>
+          <aside class="notes">
+            Welcome everyone to our Q4 2025 earnings presentation.  
+            Today we'll cover our financial performance, key metrics, and future outlook.
+          </aside>
         </section>
 
-        <!-- SLIDE 2: MARKDOWN SUPPORT -->
+        <!-- Slide 2: Executive Summary (Markdown) -->
         <section data-markdown>
           <textarea data-template>
-## Markdown Slide
+            ## Executive Summary
 
-- This slide uses **Markdown**
-- Supports *italics*, **bold**, `inline code`
-- Below is a fragment list:
+            - **Revenue Growth**: 23. 5% YoY increase
+            - **Net Profit**: $2.4B (+18% QoQ)
+            - **Customer Acquisition**: 1.2M new accounts
+            - **Digital Transformation**: 87% online engagement
+            - **Market Share**: Increased to 15. 3%
 
-- Item A <!-- .element: class="fragment" -->
-- Item B <!-- .element: class="fragment fade-up" -->
-- Item C <!-- .element: class="fragment fade-in-then-semi-out" -->
+            ---
 
----
+            ### Strategic Initiatives
 
-## Next Markdown Slide
+            * Enhanced mobile banking platform
+            * AI-powered fraud detection
+            * Sustainable investment products
+          </textarea>
+        </section>
 
-```python
-def hello():
-    print("Hello, World!")
-php-template
-Copy code
-      </textarea>
-    </section>
+        <!-- Slide 3: Financial Metrics (Fragments) -->
+        <section>
+          <h2>Key Financial Metrics</h2>
+          <ul>
+            <li class="fragment fade-up">Total Assets: <strong>$45.6 Billion</strong></li>
+            <li class="fragment fade-up">Return on Equity (ROE): <strong>14.2%</strong></li>
+            <li class="fragment fade-up">Cost-to-Income Ratio: <strong>52.3%</strong></li>
+            <li class="fragment fade-up">Net Interest Margin: <strong>3.8%</strong></li>
+            <li class="fragment fade-up">Capital Adequacy Ratio: <strong>16.5%</strong></li>
+          </ul>
+          <aside class="notes">
+            Our financial metrics show strong performance across all key indicators. 
+            Particularly noteworthy is our ROE improvement and capital adequacy. 
+          </aside>
+        </section>
 
-    <!-- SLIDE 3: CODE HIGHLIGHTING -->
-    <section>
-      <h2>Animated Code Reveal</h2>
-      <pre><code class="python" data-line-numbers="1,2|4-6|7">
+        <!-- Slide 4: Revenue Analysis with Math -->
+        <section>
+          <h2>Revenue Growth Analysis</h2>
+          <div class="formula">
+            <p>Year-over-Year Growth Rate:</p>
+            \[
+            \text{Growth Rate} = \frac{\text{Revenue}_{\text{current}} - \text{Revenue}_{\text{previous}}}{\text{Revenue}_{\text{previous}}} \times 100\%
+            \]
+          </div>
+          <div class="formula fragment">
+            <p>Return on Investment (ROI):</p>
+            \[
+            \text{ROI} = \frac{\text{Net Profit}}{\text{Total Investment}} \times 100\% = 14.2\%
+            \]
+          </div>
+          <div class="formula fragment">
+            <p>Compound Annual Growth Rate (CAGR):</p>
+            \[
+            \text{CAGR} = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\frac{1}{n}} - 1
+            \]
+          </div>
+          <aside class="notes">
+            These formulas demonstrate our analytical approach to measuring performance.
+            Our 14.2% ROI exceeds industry average by 3.5 percentage points.
+          </aside>
+        </section>
+
+        <!-- Slide 5: Code Example -->
+        <section>
+          <h2>Financial Calculations</h2>
+          <pre><code class="python" data-line-numbers="1-2|4-7|9-12|14-15">
 import pandas as pd
-import seaborn as sns
+import numpy as np
 
-Load data
-data = pd.read_csv("data.csv")
+# Calculate portfolio returns
+def calculate_portfolio_return(assets, weights, returns):
+    portfolio_return = np.sum(weights * returns)
+    return portfolio_return
 
-Visualize
-sns.scatterplot(data=data, x="x", y="y")
-</code></pre>
-</section>
+# Risk-adjusted performance (Sharpe Ratio)
+def sharpe_ratio(returns, risk_free_rate=0.02):
+    excess_return = returns - risk_free_rate
+    return excess_return / np.std(returns)
 
-php-template
-Copy code
-    <!-- SLIDE 4: FRAGMENTS & ANIMATION -->
-    <section>
-      <h2>Key Points</h2>
-      <ul>
-        <li class="fragment">First point appears</li>
-        <li class="fragment fade-up">Second point slides up</li>
-        <li class="fragment fade-in-then-out">Third point fades out</li>
-        <li class="fragment grow">Fourth point grows</li>
-      </ul>
-    </section>
+# Example usage
+portfolio_data = pd.read_csv('quarterly_data.csv')
+performance = calculate_portfolio_return(
+    portfolio_data['assets'], 
+    portfolio_data['weights'], 
+    portfolio_data['returns']
+)
 
-    <!-- SLIDE 5: STACKED ANIMATION -->
-    <section>
-      <h2>Step-by-Step Diagram</h2>
-      <div class="r-stack">
-        <img class="fragment" src="https://via.placeholder.com/500x250?text=Step+1" />
-        <img class="fragment fade-up" src="https://via.placeholder.com/500x250?text=Step+2" />
-        <img class="fragment fade-in-then-out" src="https://via.placeholder.com/500x250?text=Step+3" />
+print(f"Portfolio Return: {performance:.2%}")
+          </code></pre>
+          <aside class="notes">
+            This code demonstrates our automated portfolio analysis system.
+            We use Python for real-time risk assessment and performance tracking.
+          </aside>
+        </section>
+
+        <!-- Slide 6: Market Performance -->
+        <section>
+          <h2>Market Performance Highlights</h2>
+          <div class="r-stack">
+            <div class="fragment fade-in-then-out">
+              <h3>Q1 2025</h3>
+              <p>Strong start with 5.2% growth</p>
+            </div>
+            <div class="fragment fade-in-then-out">
+              <h3>Q2 2025</h3>
+              <p>Sustained momentum at 6.8% growth</p>
+            </div>
+            <div class="fragment fade-in-then-out">
+              <h3>Q3 2025</h3>
+              <p>Peak performance: 8.1% growth</p>
+            </div>
+            <div class="fragment fade-in">
+              <h3>Q4 2025</h3>
+              <p>Consolidated gains: 7.5% growth</p>
+              <p><strong>Annual Total: 23.5% YoY</strong></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 7: Technology Investment -->
+        <section>
+          <h2>Digital Innovation Investment</h2>
+          <pre><code class="javascript" data-line-numbers="1-3|5-10|12-16">
+// AI-Powered Fraud Detection System
+const fraudDetectionModel = {
+  accuracy: 0.967,
+  
+  analyzeTransaction: function(transaction) {
+    const riskScore = this.calculateRisk(transaction);
+    if (riskScore > 0.75) {
+      return { status: 'FLAGGED', score: riskScore };
+    }
+    return { status: 'APPROVED', score: riskScore };
+  },
+  
+  calculateRisk: function(transaction) {
+    // ML model scoring logic
+    return modelPredict(transaction. features);
+  }
+};
+
+// 99.3% fraud prevention rate achieved
+console.log('System prevented $12.4M in fraud this quarter');
+          </code></pre>
+          <aside class="notes">
+            Our AI fraud detection system has been a game-changer,
+            preventing $12.4M in fraudulent transactions this quarter alone.
+          </aside>
+        </section>
+
+        <!-- Slide 8: Future Outlook -->
+        <section data-markdown>
+          <textarea data-template>
+            ## 2026 Strategic Outlook
+
+            ### Growth Targets
+            - Revenue growth: **25-30%**
+            - New market expansion: **3 regions**
+            - Digital customer base: **+40%**
+
+            ### Investment Priorities
+            1. Cloud infrastructure modernization
+            2.  Cybersecurity enhancement
+            3. Sustainable finance products
+            4. Customer experience platforms
+          </textarea>
+        </section>
+
+        <!-- Slide 9: Conclusion -->
+        <section>
+          <h2>Thank You</h2>
+          <p>Questions & Discussion</p>
+          <br/>
+          <p class="fragment">Strong Q4 performance positions us well for continued growth</p>
+          <p class="fragment">Strategic investments in technology driving efficiency</p>
+          <p class="fragment">Committed to sustainable, profitable expansion</p>
+          <br/><br/>
+          <p class="email-highlight">Contact: 23f3000339@ds.study. iitm.ac.in</p>
+          <aside class="notes">
+            Thank stakeholders for their continued support. 
+            Open the floor for questions - be prepared to discuss:
+            - Cost management strategies
+            - Digital transformation timeline
+            - Risk management approach
+            - Market expansion plans
+          </aside>
+        </section>
+
       </div>
-    </section>
+    </div>
 
-    <!-- SLIDE 6: MATH -->
-    <section>
-      <h2>Mathematics (KaTeX)</h2>
-      <p class="fragment">
-        \[
-        P(A|B) = \frac{P(B|A)P(A)}{P(B)}
-        \]
-      </p>
-      <p class="fragment fade-up">
-        Fundamental Bayesian inference relation.
-      </p>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5. 0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal. js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr. net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-    <!-- SLIDE 7: MERMAID DIAGRAM -->
-    <section>
-      <h2>Mermaid Diagram</h2>
-      <div class="fragment mermaid">
-        graph TD
-            A[Input Data] -->|Clean| B[Processing]
-            B -->|Analyze| C[Model]
-            C -->|Visualize| D[Dashboard]
-      </div>
-    </section>
-
-    <!-- SLIDE 8: INTERACTIVE CHART -->
-    <section id="chart-slide">
-      <h2>D3.js Integration</h2>
-      <div id="d3-chart" class="chart fragment"></div>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const box = document.getElementById("d3-chart");
-          box.innerHTML = "<p style='text-align:center;margin-top:150px;'>D3 chart placeholder</p>";
-        });
-      </script>
-    </section>
-
-    <!-- SLIDE 9: LIVE DEMO -->
-    <section>
-      <h2>Live Demo Embedded</h2>
-      <iframe data-src="https://example.com" width="800" height="400" data-preload></iframe>
-    </section>
-
-    <!-- SLIDE 10: SPEAKER NOTES -->
-    <section>
-      <h2>Slide with Speaker Notes</h2>
-      <p>Content visible to audience</p>
-      <aside class="notes">
-        Speaker note: discuss deeper meaning here.
-      </aside>
-    </section>
-
-    <!-- SLIDE 11: END -->
-    <section>
-      <h1>Thank You!</h1>
-      <p class="fragment">Questions?</p>
-    </section>
-
-  </div>
-</div>
-
-<!-- RevealJS core -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-
-<!-- Plugins -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/mermaid/mermaid.js"></script>
-
-<!-- Initialize RevealJS -->
-<script>
-  Reveal.initialize({
-    width: 1280,
-    height: 720,
-    margin: 0.04,
-    controls: true,
-    progress: true,
-    history: true,
-    transition: "slide",
-    plugins: [
-      RevealMarkdown,
-      RevealHighlight,
-      RevealMath.KaTeX,
-      RevealNotes,
-      RevealMermaid
-    ]
-  });
-</script>
-</body> </html>
+    <script>
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        margin: 0.04,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        transitionSpeed: 'default',
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath. KaTeX, RevealNotes]
+      });
+    </script>
+  </body>
+</html>
