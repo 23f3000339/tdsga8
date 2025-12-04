@@ -62,7 +62,18 @@
 - **Market Share**: Increased to 15.3%
           </textarea>
         </section>
+<section>
+  <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
+import pandas as pd
+import seaborn as sns
 
+# Load data
+data = pd.read_csv('data.csv')
+
+# Create visualization
+sns.scatterplot(data=data, x='x', y='y')
+  </code></pre>
+</section>
         <!-- Slide 3: Strategic Initiatives -->
         <section data-markdown>
           <textarea data-template>
