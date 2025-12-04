@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RevealJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+
+  <!-- Code Highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- TITLE SLIDE -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <h3>Technical Consultant Presentation</h3>
+      <p>Email: <strong>testing@xyz.com</strong></p>
+      <aside class="notes">
+        Introduce yourself and mention this is an interactive RevealJS-based report.
+      </aside>
+    </section>
+
+    <!-- MARKDOWN SLIDE -->
+    <section data-markdown="slides.md"
+             data-separator="^---$"
+             data-separator-vertical="^--$"
+             data-notes="^Note:"></section>
+
+    <!-- CODE SAMPLE SLIDE -->
+    <section>
+      <h2>Data Extraction Code</h2>
+      <pre><code class="language-python">
+import pandas as pd
+
+df = pd.read_csv("earnings.csv")
+print(df.describe())
+      </code></pre>
+
+      <aside class="notes">
+        Describe how internal data pipelines collect earnings data.
+      </aside>
+    </section>
+
+    <!-- FINANCIAL MATH SLIDE -->
+    <section>
+      <h2>Financial Formula</h2>
+      <p class="fragment">Net Present Value (NPV):</p>
+      <p class="fragment">
+        $$NPV = \sum_{t=1}^{n} \frac{C_t}{(1+r)^t}$$
+      </p>
+
+      <aside class="notes">
+        Explain how NPV guides long-term investment decisions.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- RevealJS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    plugins: [ RevealMarkdown, RevealHighlight ]
+  });
+</script>
+</body>
+</html>
+
