@@ -4,10 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quarterly Earnings Report</title>
+
+    <!-- Core & Theme CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/reveal. js/4.5.0/theme/black.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css"
+    />
+
     <style>
       .email-highlight {
         color: #42affa;
@@ -20,7 +29,9 @@
         border-radius: 10px;
         margin: 20px 0;
       }
-      . reveal h1, .reveal h2, .reveal h3 {
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
         text-transform: none;
       }
     </style>
@@ -28,14 +39,13 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        
         <!-- Slide 1: Title -->
         <section>
           <h1>Quarterly Earnings Report</h1>
           <h3>Q4 2025 - Financial Institution</h3>
-          <p class="email-highlight">Contact: 23f3000339@ds.study. iitm.ac.in</p>
+          <p class="email-highlight">Contact: 23f3000339@ds.study.iitm.ac.in</p>
           <aside class="notes">
-            Welcome everyone to our Q4 2025 earnings presentation.   
+            Welcome everyone to our Q4 2025 earnings presentation.
             Today we'll cover our financial performance, key metrics, and future outlook.
           </aside>
         </section>
@@ -43,25 +53,25 @@
         <!-- Slide 2: Executive Summary (Markdown) -->
         <section data-markdown>
           <textarea data-template>
-            ## Executive Summary
+## Executive Summary
 
-            - **Revenue Growth**: 23. 5% YoY increase
-            - **Net Profit**: $2.4B (+18% QoQ)
-            - **Customer Acquisition**: 1.2M new accounts
-            - **Digital Transformation**: 87% online engagement
-            - **Market Share**: Increased to 15. 3%
+- **Revenue Growth**: 23.5% YoY increase
+- **Net Profit**: $2.4B (+18% QoQ)
+- **Customer Acquisition**: 1.2M new accounts
+- **Digital Transformation**: 87% online engagement
+- **Market Share**: Increased to 15.3%
           </textarea>
         </section>
 
         <!-- Slide 3: Strategic Initiatives -->
         <section data-markdown>
           <textarea data-template>
-            ### Strategic Initiatives
+### Strategic Initiatives
 
-            * Enhanced mobile banking platform
-            * AI-powered fraud detection
-            * Sustainable investment products
-            * Customer experience enhancement
+* Enhanced mobile banking platform
+* AI-powered fraud detection
+* Sustainable investment products
+* Customer experience enhancement
           </textarea>
         </section>
 
@@ -76,8 +86,8 @@
             <li class="fragment fade-up">Capital Adequacy Ratio: <strong>16.5%</strong></li>
           </ul>
           <aside class="notes">
-            Our financial metrics show strong performance across all key indicators.  
-            Particularly noteworthy is our ROE improvement and capital adequacy.  
+            Our financial metrics show strong performance across all key indicators.
+            Particularly noteworthy is our ROE improvement and capital adequacy.
           </aside>
         </section>
 
@@ -127,12 +137,12 @@ def sharpe_ratio(returns, risk_free_rate=0.02):
 # Example usage
 portfolio_data = pd.read_csv('quarterly_data.csv')
 performance = calculate_portfolio_return(
-    portfolio_data['assets'], 
-    portfolio_data['weights'], 
+    portfolio_data['assets'],
+    portfolio_data['weights'],
     portfolio_data['returns']
 )
 
-print(f"Portfolio Return: {performance:. 2%}")
+print(f"Portfolio Return: {performance:.2%}")
           </code></pre>
           <aside class="notes">
             This code demonstrates our automated portfolio analysis system.
@@ -170,7 +180,7 @@ print(f"Portfolio Return: {performance:. 2%}")
           <pre><code class="javascript" data-line-numbers="1-3|5-10|12-16">// AI-Powered Fraud Detection System
 const fraudDetectionModel = {
   accuracy: 0.967,
-  
+
   analyzeTransaction: function(transaction) {
     const riskScore = this.calculateRisk(transaction);
     if (riskScore > 0.75) {
@@ -178,10 +188,10 @@ const fraudDetectionModel = {
     }
     return { status: 'APPROVED', score: riskScore };
   },
-  
+
   calculateRisk: function(transaction) {
     // ML model scoring logic
-    return modelPredict(transaction. features);
+    return modelPredict(transaction.features);
   }
 };
 
@@ -190,25 +200,25 @@ console.log('System prevented $12.4M in fraud this quarter');
           </code></pre>
           <aside class="notes">
             Our AI fraud detection system has been a game-changer,
-            preventing $12.4M in fraudulent transactions this quarter alone. 
+            preventing $12.4M in fraudulent transactions this quarter alone.
           </aside>
         </section>
 
         <!-- Slide 9: Future Outlook -->
         <section data-markdown>
           <textarea data-template>
-            ## 2026 Strategic Outlook
+## 2026 Strategic Outlook
 
-            ### Growth Targets
-            - Revenue growth: **25-30%**
-            - New market expansion: **3 regions**
-            - Digital customer base: **+40%**
+### Growth Targets
+- Revenue growth: **25-30%**
+- New market expansion: **3 regions**
+- Digital customer base: **+40%**
 
-            ### Investment Priorities
-            1. Cloud infrastructure modernization
-            2.  Cybersecurity enhancement
-            3. Sustainable finance products
-            4. Customer experience platforms
+### Investment Priorities
+1. Cloud infrastructure modernization
+2. Cybersecurity enhancement
+3. Sustainable finance products
+4. Customer experience platforms
           </textarea>
         </section>
 
@@ -216,14 +226,14 @@ console.log('System prevented $12.4M in fraud this quarter');
         <section>
           <h2>Thank You</h2>
           <p>Questions & Discussion</p>
-          <br/>
+          <br />
           <p class="fragment">Strong Q4 performance positions us well for continued growth</p>
           <p class="fragment">Strategic investments in technology driving efficiency</p>
           <p class="fragment">Committed to sustainable, profitable expansion</p>
-          <br/><br/>
-          <p class="email-highlight">Contact: 23f3000339@ds. study. iitm.ac.in</p>
+          <br /><br />
+          <p class="email-highlight">Contact: 23f3000339@ds.study.iitm.ac.in</p>
           <aside class="notes">
-            Thank stakeholders for their continued support. 
+            Thank stakeholders for their continued support.
             Open the floor for questions - be prepared to discuss:
             - Cost management strategies
             - Digital transformation timeline
@@ -231,18 +241,17 @@ console.log('System prevented $12.4M in fraud this quarter');
             - Market expansion plans
           </aside>
         </section>
-
       </div>
     </div>
 
     <!-- RevealJS Core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
-    
+
     <!-- Plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5. 0/plugin/markdown/markdown. js"></script>
-    <script src="https://cdnjs. cloudflare.com/ajax/libs/reveal.js/4. 5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdnjs.cloudflare. com/ajax/libs/reveal. js/4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.js"></script>
 
     <!-- Initialize -->
     <script>
@@ -256,20 +265,19 @@ console.log('System prevented $12.4M in fraud this quarter');
         center: true,
         transition: 'slide',
         transitionSpeed: 'default',
-        
+
         // Plugin configuration
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath. KaTeX, RevealNotes ],
-        
-        // Markdown plugin config
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
+
         markdown: {
-          smartypants: true
+          smartypants: true,
         },
-        
-        // Math plugin config
+
         math: {
-          mathjax: 'https://cdn. jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml. js',
-          config: 'TeX-AMS_HTML-full'
-        }
+          // For KaTeX, you would use the KaTeX plugin; for this generic math plugin, do not add spaces
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+        },
       });
     </script>
   </body>
