@@ -2,41 +2,12 @@
 marp: true
 theme: custom
 paginate: true
-footer: "Quarterly Tech Review — Page $page / $total"
 math: katex
+footer: "Tech Review — Page $page / $total"
 ---
 
-<!-- Custom Theme -->
-<style>
-section {
-  font-family: 'Segoe UI', sans-serif;
-}
-
-h1 {
-  color: #003366;
-}
-
-h2 {
-  color: #006699;
-}
-
-/* Custom box */
-.box {
-  padding: 20px;
-  border-radius: 10px;
-  background: #eef7ff;
-  border: 2px solid #99ccee;
-  font-size: 1.1em;
-}
-
-/* Page number style */
-section::after {
-  color: #444 !important;
-  font-size: 12px;
-}
-</style>
-
-<!-- theme: custom -->
+<!-- A Marp directive applied to this slide -->
+<!-- class: lead -->
 
 # Quarterly Technical Insights  
 ### Created by: **23f3000339@ds.study.iitm.ac.in**
@@ -44,6 +15,8 @@ section::after {
 ---
 
 # Algorithmic Complexity
+
+<!-- class: smaller-text -->
 
 Understanding upper-bound complexity:
 
@@ -61,24 +34,27 @@ T(n) = O(n \log n)
 
 ---
 
-<!-- Background image slide -->
-<!-- Use your own image URL or local file -->
-![bg](https://images.unsplash.com/photo-1504384308090-c894fdcc538d)
+<!-- Background image slide with explicit Marp directives -->
+<!-- backgroundImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d" -->
+<!-- backgroundSize: cover -->
+<!-- backgroundPosition: center -->
 
 # System Architecture Overview
 
 <div class="box">
-This slide uses a **background image**, custom **theme**, and a highlighted **info box**.
+This slide uses a **background image**, custom theme, and styled info box.
 </div>
 
 ---
 
+<!-- class: highlight -->
+
 # Custom-Styled Slide
 
 <div class="box">
-- Styled using custom CSS  
-- Uses the `.box` class  
-- Consistent theme across slides  
+- Uses a custom CSS theme  
+- `.box` class for emphasized content  
+- Demonstrates explicit Marp slide directives  
 </div>
 
 ---
@@ -86,10 +62,44 @@ This slide uses a **background image**, custom **theme**, and a highlighted **in
 # Summary
 
 - Custom Marp theme  
-- Page numbers enabled  
-- Background image slide  
-- Math (KaTeX) for algorithmic complexity  
-- Fully portable Markdown slide deck  
+- Page numbers  
+- Background image  
+- Algorithmic complexity with KaTeX  
+- Custom directives  
+- Ready for PDF/HTML export  
 
 **Thank you!**
+
+---
+
+<!-- CUSTOM THEME -->
+<style>
+section {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  color: #003366;
+}
+
+h2 {
+  color: #006699;
+}
+
+.smaller-text {
+  font-size: 0.9em;
+}
+
+.highlight {
+  background: #f0faff;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #eef7ff;
+  border: 2px solid #99ccee;
+  font-size: 1.1em;
+}
+</style>
 
