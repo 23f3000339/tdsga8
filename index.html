@@ -1,89 +1,124 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Quarterly Earnings Report</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report Q3</title>
+    
+    <!-- RevealJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    
+    <!-- Syntax Highlighting Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
 
-  <!-- RevealJS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+        <!-- SLIDE 1: Title & Consultant Info -->
+        <section>
+          <h1>Q3 Earnings Report</h1>
+          <h3>Financial Performance Review</h3>
+          <p>
+            <small>Presented by Technical Consultant</small><br>
+            <!-- REQUIREMENT: Your Email -->
+            <small><a href="mailto:23f3000339@ds.study.iitm.ac.in">23f3000339@ds.study.iitm.ac.in</a></small>
+          </p>
+          <!-- REQUIREMENT: Speaker Notes -->
+          <aside class="notes">
+            Good morning stakeholders. Today we will review the Q3 performance metrics, focusing on our tech adoption and ROI.
+          </aside>
+        </section>
 
-  <!-- Code Highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+        <!-- SLIDE 2: Markdown Content -->
+        <!-- REQUIREMENT: Written in Markdown -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Executive Summary
+            
+            Key takeaways from this quarter:
+            
+            - Revenue exceeded targets by **15%**
+            - Cloud infrastructure costs reduced by **8%**
+            - *Customer acquisition cost* (CAC) remained stable
+            
+            ---
+            
+            > "Innovation is the ability to see change as an opportunity - not a threat."
+          </textarea>
+        </section>
 
-  <!-- MathJax -->
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$']] }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+        <!-- SLIDE 3: Fragments/Animations -->
+        <!-- REQUIREMENT: Animated elements -->
+        <section>
+          <h2>Growth Drivers</h2>
+          <p>Our strategy relied on three pillars:</p>
+          <ul>
+            <li class="fragment fade-up">Automated Trading Algorithms</li>
+            <li class="fragment fade-up">Real-time Fraud Detection</li>
+            <li class="fragment fade-up">Blockchain Integration</li>
+          </ul>
+          <p class="fragment" style="color: green; margin-top: 20px;">All pillars represent positive ROI.</p>
+        </section>
 
-<body>
-<div class="reveal">
-  <div class="slides">
-
-    <!-- TITLE SLIDE -->
-    <section>
-      <h1>Quarterly Earnings Report</h1>
-      <h3>Technical Consultant Presentation</h3>
-      <p>Email: <strong>23f3000339@ds.study.iitm.ac.in</strong></p>
-      <aside class="notes">
-        Introduce yourself and mention this is an interactive RevealJS-based report.
-      </aside>
-    </section>
-
-    <!-- MARKDOWN SLIDE -->
-    <section data-markdown="slides.md"
-             data-separator="^---$"
-             data-separator-vertical="^--$"
-             data-notes="^Note:"></section>
-
-    <!-- CODE SAMPLE SLIDE -->
-    <section>
-      <h2>Data Extraction Code</h2>
-      <pre><code class="language-python">
+        <!-- SLIDE 4: Code Presentation -->
+        <!-- REQUIREMENT: Code with syntax highlighting -->
+        <section>
+          <h2>Algorithmic Efficiency</h2>
+          <p>Python implementation for yield calculation:</p>
+          <pre><code class="python" data-line-numbers="1-2|4-5|7">
+import numpy as np
 import pandas as pd
 
-df = pd.read_csv("earnings.csv")
-print(df.describe())
-      </code></pre>
+# Calculate simple return
+def calculate_yield(start_price, end_price):
+    return (end_price - start_price) / start_price
 
-      <aside class="notes">
-        Describe how internal data pipelines collect earnings data.
-      </aside>
-    </section>
+current_yield = calculate_yield(100, 115)
+print(f"Yield: {current_yield:.2%}")
+          </code></pre>
+        </section>
 
-    <!-- FINANCIAL MATH SLIDE -->
-    <section>
-      <h2>Financial Formula</h2>
-      <p class="fragment">Net Present Value (NPV):</p>
-      <p class="fragment">
-        $$NPV = \sum_{t=1}^{n} \frac{C_t}{(1+r)^t}$$
-      </p>
+        <!-- SLIDE 5: Math Equations -->
+        <!-- REQUIREMENT: Mathematical equations -->
+        <section>
+          <h2>Financial Modeling</h2>
+          <p>We utilized the Compound Annual Growth Rate formula to project Q4:</p>
+          
+          <div style="font-size: 1.5em; margin-top: 30px;">
+            \[ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 \]
+          </div>
+          
+          <br>
+          <p style="font-size: 0.8em">
+            Where \(EV\) is Ending Value, \(BV\) is Beginning Value, and \(n\) is number of years.
+          </p>
+        </section>
 
-      <aside class="notes">
-        Explain how NPV guides long-term investment decisions.
-      </aside>
-    </section>
+        <section>
+          <h2>Thank You</h2>
+          <p>Questions?</p>
+        </section>
 
-  </div>
-</div>
+      </div>
+    </div>
 
-<!-- RevealJS Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-<script>
-  Reveal.initialize({
-    hash: true,
-    slideNumber: true,
-    plugins: [ RevealMarkdown, RevealHighlight ]
-  });
-</script>
-</body>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+      });
+    </script>
+  </body>
 </html>
-
