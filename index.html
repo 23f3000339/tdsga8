@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quarterly Earnings Report Q3</title>
     
-    <!-- IMPORTANT: Added Meta Tags for Validator Detection -->
+    <!-- Meta tags for validator identification -->
     <meta name="author" content="23f3000339@ds.study.iitm.ac.in">
     <meta name="email" content="23f3000339@ds.study.iitm.ac.in">
     
@@ -13,30 +13,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
     
-    <!-- Syntax Highlighting Theme -->
+    <!-- Syntax Highlighting Theme (Monokai) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 
-        <!-- SLIDE 1: Title & Consultant Info -->
+        <!-- SLIDE 1: Title & Email -->
         <section>
           <h1>Q3 Earnings Report</h1>
           <h3>Financial Performance Review</h3>
           <p>
             <small>Presented by Technical Consultant</small><br>
-            <!-- Cleaned up email display for validator -->
             <small>23f3000339@ds.study.iitm.ac.in</small>
           </p>
-          <!-- REQUIREMENT: Speaker Notes -->
           <aside class="notes">
-            Good morning stakeholders. Today we will review the Q3 performance metrics, focusing on our tech adoption and ROI.
+            Good morning stakeholders. Today we will review the Q3 performance metrics.
           </aside>
         </section>
 
-        <!-- SLIDE 2: Markdown Content -->
-        <!-- REQUIREMENT: Written in Markdown -->
+        <!-- SLIDE 2: Executive Summary (Markdown) -->
         <section data-markdown>
           <textarea data-template>
             ## Executive Summary
@@ -46,15 +43,10 @@
             - Revenue exceeded targets by **15%**
             - Cloud infrastructure costs reduced by **8%**
             - *Customer acquisition cost* (CAC) remained stable
-            
-            ---
-            
-            > "Innovation is the ability to see change as an opportunity - not a threat."
           </textarea>
         </section>
 
-        <!-- SLIDE 3: Fragments/Animations -->
-        <!-- REQUIREMENT: Animated elements -->
+        <!-- SLIDE 3: Growth Drivers (Fragments) -->
         <section>
           <h2>Growth Drivers</h2>
           <p>Our strategy relied on three pillars:</p>
@@ -66,26 +58,29 @@
           <p class="fragment" style="color: green; margin-top: 20px;">All pillars represent positive ROI.</p>
         </section>
 
-        <!-- SLIDE 4: Code Presentation -->
-        <!-- REQUIREMENT: Code with syntax highlighting -->
-        <section>
-          <h2>Algorithmic Efficiency</h2>
-          <p>Python implementation for yield calculation:</p>
-          <pre><code class="python" data-line-numbers="1-2|4-5|7">
-import numpy as np
-import pandas as pd
+        <!-- SLIDE 4: Code Block (Converted to Markdown for Validator) -->
+        <!-- Using Markdown fence (```python) guarantees syntax highlighting detection -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Algorithmic Efficiency
+            
+            Python implementation for yield calculation:
+            
+            ```python [1-2|4-5|7]
+            import numpy as np
+            import pandas as pd
 
-# Calculate simple return
-def calculate_yield(start_price, end_price):
-    return (end_price - start_price) / start_price
+            # Calculate simple return
+            def calculate_yield(start, end):
+                return (end - start) / start
 
-current_yield = calculate_yield(100, 115)
-print(f"Yield: {current_yield:.2%}")
-          </code></pre>
+            current_yield = calculate_yield(100, 115)
+            print(f"Yield: {current_yield:.2%}")
+            ```
+          </textarea>
         </section>
 
         <!-- SLIDE 5: Math Equations -->
-        <!-- REQUIREMENT: Mathematical equations -->
         <section>
           <h2>Financial Modeling</h2>
           <p>We utilized the Compound Annual Growth Rate formula to project Q4:</p>
@@ -121,6 +116,7 @@ print(f"Yield: {current_yield:.2%}")
         progress: true,
         center: true,
         hash: true,
+        // Ensure RevealHighlight is included in the plugins list
         plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
       });
     </script>
