@@ -1,122 +1,110 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quarterly Earnings Report Q3</title>
+    <!-- SLIDE 4: FRAGMENTS & ANIMATION -->
+    <section>
+      <h2>Key Points</h2>
+      <ul>
+        <li class="fragment">First point appears</li>
+        <li class="fragment fade-up">Second point slides up</li>
+        <li class="fragment fade-in-then-out">Third point fades out</li>
+        <li class="fragment grow">Fourth point grows</li>
+      </ul>
+    </section>
 
-    <!-- Meta tags -->
-    <meta name="author" content="23f3000339@ds.study.iitm.ac.in">
-    <meta name="email" content="23f3000339@ds.study.iitm.ac.in">
-
-    <!-- RevealJS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-
-    <!-- Corrected Highlight.js CSS theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
-
-  </head>
-
-  <body>
-    <div class="reveal">
-      <div class="slides">
-
-        <!-- SLIDES (unchanged) -->
-        <section>
-          <h1>Q3 Earnings Report</h1>
-          <h3>Financial Performance Review</h3>
-          <p>
-            <small>Presented by Technical Consultant</small><br>
-            <small>23f3000339@ds.study.iitm.ac.in</small>
-          </p>
-        </section>
-
-        <section data-markdown>
-          <textarea data-template>
-            ## Executive Summary
-            
-            - Revenue exceeded targets by **15%**
-            - Cloud infrastructure costs reduced by **8%**
-            - *Customer acquisition cost* remained stable
-          </textarea>
-        </section>
-
-        <section>
-          <h2>Growth Drivers</h2>
-          <ul>
-            <li class="fragment fade-up">Automated Trading Algorithms</li>
-            <li class="fragment fade-up">Real-time Fraud Detection</li>
-            <li class="fragment fade-up">Blockchain Integration</li>
-          </ul>
-        </section>
-
-        <!-- Correct Code Block Section -->
-        <section data-markdown>
-          <textarea data-template>
-            ## Algorithmic Efficiency
-
-            ```python
-            import numpy as np
-            import pandas as pd
-
-            def calculate_yield(start, end):
-                return (end - start) / start
-
-            current_yield = calculate_yield(100, 115)
-            print(f"Yield: {current_yield:.2%}")
-            ```
-          </textarea>
-        </section>
-<section>
-  <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
-import pandas as pd
-import seaborn as sns
-
-# Load data
-data = pd.read_csv('data.csv')
-
-# Create visualization
-sns.scatterplot(data=data, x='x', y='y')
-  </code></pre>
-</section>
-        <section>
-          <h2>Thank You</h2>
-          <p>Questions?</p>
-        </section>
-
+    <!-- SLIDE 5: STACKED ANIMATION -->
+    <section>
+      <h2>Step-by-Step Diagram</h2>
+      <div class="r-stack">
+        <img class="fragment" src="https://via.placeholder.com/500x250?text=Step+1" />
+        <img class="fragment fade-up" src="https://via.placeholder.com/500x250?text=Step+2" />
+        <img class="fragment fade-in-then-out" src="https://via.placeholder.com/500x250?text=Step+3" />
       </div>
-    </div>
+    </section>
 
-    <!-- RevealJS Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <!-- SLIDE 6: MATH -->
+    <section>
+      <h2>Mathematics (KaTeX)</h2>
+      <p class="fragment">
+        \[
+        P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+        \]
+      </p>
+      <p class="fragment fade-up">
+        Fundamental Bayesian inference relation.
+      </p>
+    </section>
 
-    <!-- RevealJS Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <!-- SLIDE 7: MERMAID DIAGRAM -->
+    <section>
+      <h2>Mermaid Diagram</h2>
+      <div class="fragment mermaid">
+        graph TD
+            A[Input Data] -->|Clean| B[Processing]
+            B -->|Analyze| C[Model]
+            C -->|Visualize| D[Dashboard]
+      </div>
+    </section>
 
-    <!-- Highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- SLIDE 8: INTERACTIVE CHART -->
+    <section id="chart-slide">
+      <h2>D3.js Integration</h2>
+      <div id="d3-chart" class="chart fragment"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const box = document.getElementById("d3-chart");
+          box.innerHTML = "<p style='text-align:center;margin-top:150px;'>D3 chart placeholder</p>";
+        });
+      </script>
+    </section>
 
-    <!-- Reveal Highlight Plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <!-- SLIDE 9: LIVE DEMO -->
+    <section>
+      <h2>Live Demo Embedded</h2>
+      <iframe data-src="https://example.com" width="800" height="400" data-preload></iframe>
+    </section>
 
-    <!-- Math & Notes -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <!-- SLIDE 10: SPEAKER NOTES -->
+    <section>
+      <h2>Slide with Speaker Notes</h2>
+      <p>Content visible to audience</p>
+      <aside class="notes">
+        Speaker note: discuss deeper meaning here.
+      </aside>
+    </section>
 
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealMath.KaTeX,
-          RevealNotes
-        ]
-      });
-    </script>
-  </body>
-</html>
+    <!-- SLIDE 11: END -->
+    <section>
+      <h1>Thank You!</h1>
+      <p class="fragment">Questions?</p>
+    </section>
+
+  </div>
+</div>
+
+<!-- RevealJS core -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+<!-- Plugins -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/mermaid/mermaid.js"></script>
+
+<!-- Initialize RevealJS -->
+<script>
+  Reveal.initialize({
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    controls: true,
+    progress: true,
+    history: true,
+    transition: "slide",
+    plugins: [
+      RevealMarkdown,
+      RevealHighlight,
+      RevealMath.KaTeX,
+      RevealNotes,
+      RevealMermaid
+    ]
+  });
+</script>
