@@ -1,3 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RevealJS Complete Demo Presentation</title>
+
+    <!-- RevealJS core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" />
+
+    <!-- Highlight.js theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+
+    <!-- Mermaid theme -->
+    <style>
+      .mermaid {
+        text-align: left;
+      }
+    </style>
+
+    <!-- Custom Styling -->
+    <style>
+      .reveal {
+        font-family: "Arial", sans-serif;
+      }
+      .chart {
+        height: 400px;
+        margin: 20px auto;
+        border: 1px dashed #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- SLIDE 1: TITLE -->
+        <section>
+          <h1>RevealJS Full Demo</h1>
+          <h3>All Features in One File</h3>
+          <p class="fragment fade-up">Animations Included</p>
+          <p class="fragment fade-in-then-out">Syntax Highlighting Included</p>
+          <p class="fragment grow">Math + Diagrams Included</p>
+        </section>
+
+        <!-- SLIDE 2: MARKDOWN SUPPORT -->
+        <section data-markdown>
+          <textarea data-template>
+## Markdown Slide
+
+- This slide uses **Markdown**
+- Supports *italics*, **bold**, `inline code`
+- Below is a fragment list:
+
+- Item A <!-- .element: class="fragment" -->
+- Item B <!-- .element: class="fragment fade-up" -->
+- Item C <!-- .element: class="fragment fade-in-then-semi-out" -->
+
+---
+
+## Next Markdown Slide
+
+```python
+def hello():
+    print("Hello, World!")
+php-template
+Copy code
+      </textarea>
+    </section>
+
+    <!-- SLIDE 3: CODE HIGHLIGHTING -->
+    <section>
+      <h2>Animated Code Reveal</h2>
+      <pre><code class="python" data-line-numbers="1,2|4-6|7">
+import pandas as pd
+import seaborn as sns
+
+Load data
+data = pd.read_csv("data.csv")
+
+Visualize
+sns.scatterplot(data=data, x="x", y="y")
+</code></pre>
+</section>
+
+php-template
+Copy code
     <!-- SLIDE 4: FRAGMENTS & ANIMATION -->
     <section>
       <h2>Key Points</h2>
@@ -108,3 +198,4 @@
     ]
   });
 </script>
+</body> </html>
